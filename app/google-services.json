@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "215270082812",
+    "project_id": "pengaduanfirebase",
+    "storage_bucket": "pengaduanfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215270082812:android:80764dd1ccd5f1ccecef79",
+        "android_client_info": {
+          "package_name": "com.example.pengaduan_firebase_13"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkzZpiVcNnTbJVwIZwauJ2pO6O0yS2kdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

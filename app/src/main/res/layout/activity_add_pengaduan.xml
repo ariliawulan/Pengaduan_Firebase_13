@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".AddPengaduanActivity">
+
+    <!-- Add Note Heading -->
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Complaint"
+        android:textColor="#003D45"
+        android:fontFamily="@font/mblack"
+        android:textSize="24sp"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Save Button -->
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/addNoteHeading"
+        android:background="@drawable/blue_border"
+        android:layout_marginEnd="6dp" />
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addNoteHeading"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/mmedium"
+        android:hint="Enter the Name"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Title EditText -->
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/mmedium"
+        android:hint="Enter the Complaint Title"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Description -->
+    <EditText
+        android:id="@+id/pengaduanEditText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Enter the Complaint"
+        android:layout_below="@+id/titleEditText"
+        android:gravity="top"
+        android:fontFamily="@font/mmedium"
+        android:padding="12dp"
+        android:background="@drawable/blue_border"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"/>
+
+
+</RelativeLayout>

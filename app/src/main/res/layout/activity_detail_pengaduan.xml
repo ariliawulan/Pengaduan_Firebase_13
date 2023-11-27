@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".DetailPengaduan">
+
+    <!-- Detail Note Heading -->
+    <TextView
+        android:id="@+id/detailNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/mblack"
+        android:text="Detail Complaint"
+        android:textAlignment="center"
+        android:textColor="#003D45"
+        android:textSize="24sp" />
+
+    <!-- Name Detail -->
+    <TextView
+        android:id="@+id/nameDetail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/detailNoteHeading"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/mmedium"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Title Detail -->
+    <TextView
+        android:id="@+id/titleDetail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/nameDetail"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/mmedium"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Pengaduan Detail -->
+    <TextView
+        android:id="@+id/contentDetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/titleDetail"
+        android:gravity="top"
+        android:fontFamily="@font/mmedium"
+        android:padding="12dp"
+        android:background="@drawable/blue_border"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentDetail"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/blue_border"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/mmedium"
+        android:text="Edit"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/mmedium"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/btnEdit"
+        android:layout_below="@id/contentDetail"
+        android:background="@drawable/blue_border"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
